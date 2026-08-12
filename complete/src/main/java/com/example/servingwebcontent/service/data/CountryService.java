@@ -13,9 +13,12 @@ public class CountryService {
         this.countryService = countryService;
     }
 
-    public CountryWrapperResponse getCountries() {
+    public CountryWrapperResponse getCountries(int offset, int limit) {
         return countryService.get()
-                .uri("")
+                .uri(uriBuilder -> uriBuilder
+                        .queryParam("offset", offset)
+                        .queryParam("limit", limit)
+                        .build())
                 .header("Authorization", "Bearer rc_live_b8418777ee754a21ae787aa2d12b1936")
                 .retrieve()
                 .body(CountryWrapperResponse.class);
