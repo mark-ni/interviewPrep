@@ -19,7 +19,7 @@ public class CountryService {
                         .queryParam("offset", offset)
                         .queryParam("limit", limit)
                         .build())
-                .header("Authorization", "Bearer rc_live_b8418777ee754a21ae787aa2d12b1936")
+                .header("Authorization", "scrubbed")
                 .retrieve()
                 .body(CountryWrapperResponse.class);
     }
