@@ -1,5 +1,7 @@
 package com.example.servingwebcontent.service.data;
 
+import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
