@@ -16,6 +16,7 @@
 
 package com.example.servingwebcontent;
 
+import com.example.servingwebcontent.controllers.GreetingController;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
